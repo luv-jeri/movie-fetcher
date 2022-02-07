@@ -1,3 +1,11 @@
+const log = localStorage.getItem(
+  'isLoggedIn'
+);
+
+if (log) {
+  location.pathname = 'home.html';
+}
+
 const login = () => {
   const email =
     document.getElementById(
@@ -21,13 +29,21 @@ const login = () => {
     email === 'sanjay@gmail.com' &&
     password === '1234'
   ) {
+    //! Idea dropped
+    // document.cookie =
+    //   'isLoggedIn=true';
+
+    localStorage.setItem(
+      'isLoggedIn',
+      'true'
+    );
+
     //`  Redirect to the home page after successful login
-    location.pathname =
-      'home.html';
+    location.pathname = 'home.html';
   }
 };
 
-// Login button
+// Login button Listener
 document
   .getElementById('login')
   .addEventListener('click', login); // Add an event listener to the login button
