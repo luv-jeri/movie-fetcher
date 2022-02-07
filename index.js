@@ -21,7 +21,9 @@ const login = () => {
     email === 'sanjay@gmail.com' &&
     password === '1234'
   ) {
-    alert('Login Successful');
+    //`  Redirect to the home page after successful login
+    location.pathname =
+      'home.html';
   }
 };
 
