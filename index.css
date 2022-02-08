@@ -53,6 +53,7 @@ main {
     border-radius: .5rem;
     border: none;
     font-size: large;
+    font-family: 'Poppins', sans-serif;
 }
 
 #login {
@@ -63,6 +64,8 @@ main {
     cursor: pointer;
     color: black;
     font-size: large;
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: bolder; */
 }
 
 .shape-1 {
