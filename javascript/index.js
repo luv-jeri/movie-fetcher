@@ -1,10 +1,9 @@
 
 const login = () => {
-  const email =
+ const email =
     document.getElementById(
       'email'
     ).value; // Grab the email from the email input field and stored it in a variable
-
   const password =
     document.getElementById(
       'password'
