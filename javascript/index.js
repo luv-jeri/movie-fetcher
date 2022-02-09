@@ -1,10 +1,3 @@
-const log = localStorage.getItem(
-  'isLoggedIn'
-);
-
-if (log) {
-  location.pathname = 'home.html';
-}
 
 const login = () => {
   const email =
