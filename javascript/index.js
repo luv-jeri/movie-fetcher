@@ -39,3 +39,4 @@ const login = () => {
 document
   .getElementById('login')
   .addEventListener('click', login); // Add an event listener to the login button
+
