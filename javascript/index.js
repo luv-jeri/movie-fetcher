@@ -1,6 +1,7 @@
+import user from '../database/user.js';
 
 const login = () => {
- const email =
+  const email =
     document.getElementById(
       'email'
     ).value; // Grab the email from the email input field and stored it in a variable
@@ -17,26 +18,43 @@ const login = () => {
     return;
   }
 
-  if (
-    email === 'sanjay@gmail.com' &&
-    password === '1234'
-  ) {
-    //! Idea dropped
-    // document.cookie =
-    //   'isLoggedIn=true';
+  user.forEach(user => {
+    if(user.email === email && user.password === password) {
+        localStorage.setItem(
+          'isLoggedIn',
+          'true'
+        );
+         localStorage.setItem(
+           'email',
+         user.email
+         );
+         localStorage.setItem(
+            'name',
+            user.name
+         )
+        location.pathname = 'home.html';
+       return;
+    }
+  })
 
-    localStorage.setItem(
-      'isLoggedIn',
-      'true'
-    );
+  // if (
+  //   email === 'sanjay@gmail.com' &&
+  //   password === '1234'
+  // ) {
 
-    //`  Redirect to the home page after successful login
-    location.pathname = 'home.html';
-  }
+  // }
 };
+
+document
+  .getElementById('signup')
+  .addEventListener('click', () => {
+    console.log(
+      'Signup button clicked'
+    );
+    location.pathname = 'signup.html';
+  });
 
 // Login button Listener
 document
   .getElementById('login')
   .addEventListener('click', login); // Add an event listener to the login button
-

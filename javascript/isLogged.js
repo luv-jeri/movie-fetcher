@@ -1,13 +1,13 @@
-const logged = localStorage.getItem(
-  'isLoggedIn'
-);
+// const logged = localStorage.getItem(
+//   'isLoggedIn'
+// );
 
-if (!logged) {
-  location.pathname !== 'index.html'
-    ? (location.pathname = 'index.html')
-    : null;
-} else {
-  location.pathname !== '/home.html'
-    ? (location.pathname = 'home.html')
-    : null;
-}
+// if (!logged) {
+//   location.pathname !== 'index.html'
+//     ? (location.pathname = 'index.html')
+//     : null;
+// } else {
+//   location.pathname !== '/home.html'
+//     ? (location.pathname = 'home.html')
+//     : null;
+// }

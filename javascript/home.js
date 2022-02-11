@@ -33,12 +33,38 @@
 
 // const getData = async () => {
 //   const res = await fetch(
-    
+
 //   );
 
 //  console.log(res);
 // };
 
+//  'https://jsonplaceholder.typicode.com/users'
 
+const getData = async () => {
+  const { data } = await axios(
+    'https://reqres.in/api/users?page=2'
+  );
 
-// 'https://jsonplaceholder.typicode.com/users'
+  console.log(data.data);
+
+  data.data.forEach((element) => {
+    const card =
+      document.createElement('div');
+    //# <div></div>
+    card.classList.add('card'); //  Styling
+    // # <div class="card"></div>
+    card.innerHTML = `
+    <div>${element.first_name} ${element.last_name}</div>
+    <img class="img" src="${element.avatar}" />
+    `;
+    //# <div  class="card">${element.name}</div>
+    const container =
+      document.getElementById(
+        'card-container'
+      );
+    container.appendChild(card);  
+  });
+};
+
+getData();

@@ -100,12 +100,9 @@ h1 {
 }
 
 .card {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 600px;
-    height: 700px;
+    /* transform: translate(-50%, -50%);
+    width: 20%;
+    height: 0.2vh;
     background-color: rgba(255, 255, 255, 0.1);
     padding: 10px;
     border: 3px solid transparent;
@@ -114,5 +111,11 @@ h1 {
     outline: none;
     overflow: hidden;
     backdrop-filter: blur(50px);
-    z-index: 40;
+    z-index: 40; */
+}
+
+.img{
+    width: 10%;
+    height: 10%;
+  
 }
