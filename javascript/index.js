@@ -37,12 +37,7 @@ const login = () => {
     }
   })
 
-  // if (
-  //   email === 'sanjay@gmail.com' &&
-  //   password === '1234'
-  // ) {
-
-  // }
+ 
 };
 
 document
