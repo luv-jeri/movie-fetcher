@@ -57,6 +57,8 @@ h1 {
 
 #email,
 #password {
+    color: black;
+    font-weight: bolder;
     height: 3rem;
     width: 21rem;
     margin-top: 1rem;
