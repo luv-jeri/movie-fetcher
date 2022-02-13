@@ -69,7 +69,8 @@ h1 {
     font-family: 'Poppins', sans-serif;
 }
 
-#login {
+#login,
+#signup {
     height: 3rem;
     width: 10rem;
     border-radius: 30% 0%;
