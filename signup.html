@@ -2,7 +2,7 @@
 <html lang="en">
   
   <head>
-    // ` To use Axios 
+    <!-- To use Axios  -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <meta charset="UTF-8" />
     <meta
@@ -40,12 +40,18 @@
     <main class="main glass">
       <div class="data">
         <img
-          src="tv3.png"
+          src="m-hunter-removebg-preview.png"
           class="icon"
           alt="icon"
         />
-        <h1>Sign Up</h1>
+        <h1 class="signup">Sign Up Movies Hunter</h1>
         <div class="input">
+          <input 
+          id="name"
+          type="text"
+          placeholder="Name"
+          value=""
+          />
           <input
             id="email"
             placeholder="Email"
@@ -57,12 +63,13 @@
             placeholder="Password"
             value=""
             type="password"
-          /><br />
+          />
+          <!-- <br /> -->
           <button
-            id="login"
+            id="signup"
             type="button"
           >
-            Login
+            SignUp
           </button>
         </div>
       </div>

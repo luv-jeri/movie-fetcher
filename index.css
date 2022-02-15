@@ -52,33 +52,46 @@ h1 {
 
 .input {
     text-align: center;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
 }
 
-#email,
+#email,#name,
 #password {
-    color: black;
+    color: rgb(221, 218, 218);
     font-weight: bolder;
     height: 3rem;
     width: 21rem;
     margin-top: 1rem;
     padding: 5px;
-    border-radius: .5rem;
-    border: none;
+    /* border-radius: .5rem; */
     font-size: large;
+    padding: 5px;
     font-family: 'Poppins', sans-serif;
+    outline: none;
+
 }
 
-#login {
+#login, #signup {
     height: 3rem;
     width: 10rem;
-    border-radius: 30% 0%;
+    border-radius: 20% 0%;
     margin-top: 1rem;
     cursor: pointer;
-    color: black;
+    color: rgb(211, 208, 208);
     font-size: large;
     font-family: 'Poppins', sans-serif;
     /* font-weight: bolder; */
+    background-color: transparent;
+    display: initial;
+}
+.btn{
+    display: flex;
+    width: 21rem;
+    justify-content: space-between;
 }
 
 .shape-1 {
@@ -118,3 +131,34 @@ h1 {
     backdrop-filter: blur(50px);
     z-index: 40;
 }
+
+
+
+
+
+
+
+/*.....................Signup Css.................. */
+
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #aa9f9f;
+    box-shadow: 0 0 5px;
+}
+.signup{
+    font-size: 20px;
+    color: #adabab;
+}
+
+
+
+
+
+
+
+
+
+
+
+
